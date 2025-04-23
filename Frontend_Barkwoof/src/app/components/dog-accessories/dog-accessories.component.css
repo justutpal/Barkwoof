@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px;
+}
+
+.categories span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cardDetails {
+  border-radius: 0 25px;
+  box-shadow: 10px 10px 15px rgba(77, 51, 2, 0.43);
+  width: 17%;
+  padding: 20px 15px 30px 15px;
+}

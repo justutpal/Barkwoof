@@ -1,0 +1,60 @@
+<header>
+    <div class="up">
+        <div class="logoSection">
+            <img src="logoImage.png" alt="logo" class="logo">
+        </div>
+        <div class="middleSection">
+            <input type="search" alt="search" placeholder="Looking for...">
+            <img src="location.png" alt="locationIcon">
+        </div>
+        <div class="rightSection">
+            <img src="account.png" alt="account" class="account" (click)="clickToHide()" [routerLink]="['login']" *ngIf="!anyOne">
+            <img src="verifiedAccountIcon.png" alt="verified icon" *ngIf="anyOne" class="verified">
+            <img src="heart.png" alt="heart" class="heart" (click)="clickToHide()" [routerLink]="['wishlist']">
+            <img src="cart.png" alt="cart" class="cart" (click)="clickToHide()" [routerLink]="['cart']">
+        </div>
+    </div>
+
+    <div class="down">
+        <div class="home" (click)="clickToHide()" [routerLink]="['home']">Home</div>
+        <div class="product" (click)="showList()">
+            <div>
+                <span>Products</span>
+                <span class="downArrow" *ngIf="isvisible">&#11165;</span>
+                <span class="downArrow" *ngIf="!isvisible">&#11167;</span>
+            </div>
+            <ul class="hidden" [ngStyle]="!isvisible? {'display' : 'none'} : {'display' : 'inline'} "
+                (click)="clickToHide()" (click)="showList()">
+                <li class="clothes">Clothes</li>
+                <li class="Food">Food</li>
+                <li class="firstaid">First Aid</li>
+                <li class="cage" [routerLink]="['product_cage']">Cage</li>
+                <li class="belt" [routerLink]="['product_belt']">Belt</li>
+                <li class="bed" [routerLink]="['product_bed']">Bed</li>
+                <li class="bowl" [routerLink]="['product_bowl']">Bowl</li>
+                <li class="accessories" [routerLink]="['product_accessories']">Accessories</li>
+            </ul>
+        </div>
+
+        <div class="shopByBreed" (click)="showBreed()">
+            <div>
+                <span>Shop By Breed </span>
+                <span class="downArrow" *ngIf="isActive">&#11165;</span>
+                <span class="downArrow" *ngIf="!isActive">&#11167;</span>
+            </div>
+            <ul class="hidden" [ngStyle]="!isActive? {'display' : 'none'} : {'background-color' : 'inline'} "
+                (click)="clickToHide()" (click)="showBreed()">
+                <li class="Golden">Golden Retriever</li>
+                <li class="French">French Bulldog</li>
+                <li class="German">German Shepherd</li>
+                <li class="Poodle">Poodle</li>
+                <li class="Bulldog">Bulldog</li>
+                <li class="Rottweiler">Rottweiler</li>
+                <li class="Beagle">Beagle</li>
+                <li class="Dachshund">Dachshund</li>
+            </ul>
+        </div>
+        <div class="about" (click)="clickToHide()">About Us</div>
+        <div class="support" (click)="clickToHide()">Support</div>
+    </div>
+</header>

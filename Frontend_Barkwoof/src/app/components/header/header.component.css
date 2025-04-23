@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  list-style-type: none;
+  transition: all 0.3s;
+}
+
+/* upper section */
+
+.up {
+  height: 110px;
+  background-color: rgba(77, 51, 2, 0.862);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo section */
+
+.logoSection {
+  padding: 15px 0 15px 2%;
+}
+
+.logo {
+  height: 75px;
+  width: 100%;
+  background-color: rgb(224, 217, 217);
+  border-radius: 50%;
+}
+
+/* Middle section */
+
+.middleSection {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+input {
+  width: 50%;
+  height: 40px;
+  color: rgba(77, 51, 2, 0.862);
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.middleSection img {
+  width: 35px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Right section */
+
+.rightSection {
+  display: flex;
+  column-gap: 10%;
+  float: right;
+  width: 30%;
+  justify-content: flex-end;
+  padding: 0 2% 0 0;
+}
+
+.rightSection img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.verified {
+  padding: 5px;
+  background-color: rgb(219, 178, 100);
+  border-radius: 50%;
+}
+
+.down {
+  gap: 10%;
+  background-color: rgb(219, 178, 100);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down div {
+  cursor: pointer;
+
+}
+
+.downArrow {
+  font-size: 25px;
+  color: rgba(77, 51, 2, 0.862);
+}
+
+.hidden {
+  z-index: 1000;
+  border-radius: 10px;
+  margin: 25px 0 0 -50px;
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.hidden li {
+  border-radius: 10px;
+  padding: 25px 50px 25px 25px;
+  background-color: wheat;
+  border-bottom: 1px solid black;
+}
+
+.hidden li:hover {
+  font-size: 25px;
+}

@@ -1,0 +1,68 @@
+.container {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 10px 10px 15px rgba(77, 51, 2, 0.43);
+}
+
+.imageSection {
+  padding: 25px;
+  width: 15%;
+}
+
+.imageSection img {
+  width: 100%;
+}
+
+.detailSection {
+  padding: 25px;
+  width: 70%;
+}
+
+.name {
+  margin: 15px 0;
+}
+
+.details {
+  margin: 0 0 15px 0;
+}
+
+.rating {
+  margin: 0 19px 5px 0;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.mainPrice {
+  font-size: larger;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+}
+
+.prevPrice {
+  color: rgba(0, 0, 0, 0.489);
+  text-decoration: line-through;
+  margin: 0 10px 0 0;
+}
+
+.offer {
+  color: green;
+  font-size: 18px;
+}
+
+.delete {
+  align-self: center;
+
+  width: 15%;
+  padding: 25px;
+}
+
+.delete img {
+  width: 25px;
+}

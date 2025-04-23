@@ -1,0 +1,34 @@
+<h1>Welcome to ALPA</h1>
+
+<form action="/" class="form">
+ 
+   <h2>SIGN UP</h2>
+
+   <input type="text" name="fname" id="fname" placeholder=Full-name [(ngModel)]='formObj.fullName' required>
+
+   <input type="email" name="eaddress" id="eaddress" placeholder=EMAIL-ADDRESS required [(ngModel)]='formObj.email'>
+
+   <input type="number" name="number" id="number" placeholder="Phone-number" required [(ngModel)]='formObj.phoneNumber'>
+
+   <input type="password" name="password" id="password" placeholder=Password required #pass="ngModel"
+      [(ngModel)]='formObj.password' minlength="8">
+   @if (pass.touched && pass.errors?.['required']) {
+   <span>This is required</span>
+   }
+   @else if (pass.touched && pass.errors?.['minlength']) {
+   <span>Minimum 8-characters needed.</span>
+   }
+
+   <input type="password" name="npassword" id="npassword" placeholder=Confirm-password required
+      [(ngModel)]='formObj.confrmPassward'>
+   <span *ngIf="formObj.password != formObj.confrmPassward">Password is not same</span>
+
+   <div>
+      <input type="reset" name=" reset" id='reset' value="Reset">
+      <input type="submit" name="submit" id="submit" value="Sign up" (click)="clickSubmit()">
+   </div>
+
+   <p *ngIf="isActive">{{userReact | json}}</p>
+
+   <p>Already have an account? <a routerLink="/login" class="bold"> Log in</a></p>
+</form>

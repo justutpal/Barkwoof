@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+.banner,
+.banner2 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  margin: 25px 7% 0;
+  height: 350px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.banner {
+  height: 350px;
+  background-image: url("/banner.jpg");
+}
+
+.banner2 {
+  background-image: url("/banner2.jfif");
+  display: none;
+}
+
+.pointSection {
+  display: flex;
+  justify-content: center;
+}
+
+.point,
+.point2 {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 15px 0 15px 15px;
+}
+
+.point2 {
+  /* background-color: rgb(207, 207, 207); */
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+.short {
+  display: flex;
+  background-color: rgba(77, 51, 2, 0.862);
+  margin: 0 4% 0;
+  padding: 25px;
+  height: 200px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.dogSection {
+  width: 30%;
+}
+
+.bigDog {
+  width: 90%;
+  height: 400px;
+  transform: translateY(-50px) rotatey(180deg) rotateZ(-10.1deg);
+}
+
+.materialDiv {
+  width: 70%;
+  padding: 0 100px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
+}
+
+.shortPara {
+  color: white;
+  text-align: center;
+}
+
+.material img {
+  border: 5px solid rgb(180, 117, 0);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.down {
+  gap: 10%;
+  background-color: rgb(219, 178, 100);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
